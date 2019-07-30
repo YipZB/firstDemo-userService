@@ -1,4 +1,0 @@
-2019-07-29 17:14:26.084 [main] o.s.boot.StartupInfoLogger:50   INFO  - Starting Application on XZ-133BKH459LTG with PID 18316 (E:\springbootProject\calvinye-usermanagement\target\classes started by Calvin Ye in E:\springbootProject\calvinye-usermanagement)
-2019-07-29 17:14:26.087 [main] o.s.boot.StartupInfoLogger:53   DEBUG - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
-2019-07-29 17:14:26.087 [main] o.s.boot.SpringApplication:646  INFO  - No active profile set, falling back to default profiles: default
-2019-07-29 17:14:27.501 [main] o.s.boot.StartupInfoLogger:59   INFO  - Started Application in 1.589 seconds (JVM running for 2.149)
