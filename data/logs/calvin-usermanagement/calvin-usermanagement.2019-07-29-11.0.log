@@ -1,0 +1,18 @@
+2019-07-29 11:03:56.808 [http-nio-8080-exec-5] o.a.i.l.jdbc.BaseJdbcLogger:159  DEBUG - ==>  Preparing: SELECT * FROM calvin_user WHERE email=? 
+2019-07-29 11:03:56.810 [http-nio-8080-exec-5] o.a.i.l.jdbc.BaseJdbcLogger:159  DEBUG - ==> Parameters: example9@etekcity.com.cn(String)
+2019-07-29 11:03:56.811 [http-nio-8080-exec-5] o.a.i.l.jdbc.BaseJdbcLogger:159  DEBUG - <==      Total: 1
+2019-07-29 11:08:21.319 [main] o.s.boot.StartupInfoLogger:50   INFO  - Starting Application on XZ-133BKH459LTG with PID 17668 (E:\springbootProject\calvinye-usermanagement\target\classes started by Calvin Ye in E:\springbootProject\calvinye-usermanagement)
+2019-07-29 11:08:21.321 [main] o.s.boot.StartupInfoLogger:53   DEBUG - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-29 11:08:21.321 [main] o.s.boot.SpringApplication:646  INFO  - No active profile set, falling back to default profiles: default
+2019-07-29 11:08:22.661 [main] o.s.boot.StartupInfoLogger:59   INFO  - Started Application in 1.509 seconds (JVM running for 2.066)
+2019-07-29 11:09:25.207 [main] o.s.boot.StartupInfoLogger:50   INFO  - Starting Application on XZ-133BKH459LTG with PID 2580 (E:\springbootProject\calvinye-usermanagement\target\classes started by Calvin Ye in E:\springbootProject\calvinye-usermanagement)
+2019-07-29 11:09:25.209 [main] o.s.boot.StartupInfoLogger:53   DEBUG - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-29 11:09:25.209 [main] o.s.boot.SpringApplication:646  INFO  - No active profile set, falling back to default profiles: default
+2019-07-29 11:09:26.545 [main] o.s.boot.StartupInfoLogger:59   INFO  - Started Application in 1.509 seconds (JVM running for 2.07)
+2019-07-29 11:42:43.386 [main] o.s.boot.StartupInfoLogger:50   INFO  - Starting Application on XZ-133BKH459LTG with PID 17760 (E:\springbootProject\calvinye-usermanagement\target\classes started by Calvin Ye in E:\springbootProject\calvinye-usermanagement)
+2019-07-29 11:42:43.388 [main] o.s.boot.StartupInfoLogger:53   DEBUG - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-29 11:42:43.389 [main] o.s.boot.SpringApplication:646  INFO  - No active profile set, falling back to default profiles: default
+2019-07-29 11:42:44.729 [main] o.s.boot.StartupInfoLogger:59   INFO  - Started Application in 1.517 seconds (JVM running for 2.075)
+2019-07-29 11:44:51.495 [http-nio-8080-exec-1] o.a.i.l.jdbc.BaseJdbcLogger:159  DEBUG - ==>  Preparing: SELECT * FROM calvin_user WHERE email=? 
+2019-07-29 11:44:51.510 [http-nio-8080-exec-1] o.a.i.l.jdbc.BaseJdbcLogger:159  DEBUG - ==> Parameters: example9@etekcity.com.cn(String)
+2019-07-29 11:44:51.524 [http-nio-8080-exec-1] o.a.i.l.jdbc.BaseJdbcLogger:159  DEBUG - <==      Total: 1

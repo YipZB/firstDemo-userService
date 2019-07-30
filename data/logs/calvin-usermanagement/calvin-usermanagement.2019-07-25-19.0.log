@@ -1,0 +1,17 @@
+2019-07-25 19:22:12.696 [main] o.s.boot.StartupInfoLogger:50   INFO  - Starting Application on XZ-133BKH459LTG with PID 17644 (E:\springbootProject\calvinye-usermanagement\target\classes started by Calvin Ye in E:\springbootProject\calvinye-usermanagement)
+2019-07-25 19:22:12.697 [main] o.s.boot.StartupInfoLogger:53   DEBUG - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-25 19:22:12.698 [main] o.s.boot.SpringApplication:646  INFO  - No active profile set, falling back to default profiles: default
+2019-07-25 19:22:14.196 [main] o.s.boot.StartupInfoLogger:59   INFO  - Started Application in 1.667 seconds (JVM running for 2.22)
+2019-07-25 19:58:36.714 [main] o.s.boot.StartupInfoLogger:50   INFO  - Starting Application on XZ-133BKH459LTG with PID 18128 (E:\springbootProject\calvinye-usermanagement\target\classes started by Calvin Ye in E:\springbootProject\calvinye-usermanagement)
+2019-07-25 19:58:36.715 [main] o.s.boot.StartupInfoLogger:53   DEBUG - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-25 19:58:36.716 [main] o.s.boot.SpringApplication:646  INFO  - No active profile set, falling back to default profiles: default
+2019-07-25 19:58:38.119 [main] o.s.boot.StartupInfoLogger:59   INFO  - Started Application in 1.573 seconds (JVM running for 2.132)
+2019-07-25 19:59:02.742 [http-nio-8080-exec-2] o.a.i.l.jdbc.BaseJdbcLogger:159  DEBUG - ==>  Preparing: SELECT * FROM calvin_user WHERE email=? 
+2019-07-25 19:59:02.756 [http-nio-8080-exec-2] o.a.i.l.jdbc.BaseJdbcLogger:159  DEBUG - ==> Parameters: example8@etekcity.com.cn(String)
+2019-07-25 19:59:02.771 [http-nio-8080-exec-2] o.a.i.l.jdbc.BaseJdbcLogger:159  DEBUG - <==      Total: 1
+2019-07-25 19:59:26.779 [http-nio-8080-exec-5] o.a.i.l.jdbc.BaseJdbcLogger:159  DEBUG - ==>  Preparing: SELECT * FROM calvin_user WHERE email=? 
+2019-07-25 19:59:26.779 [http-nio-8080-exec-5] o.a.i.l.jdbc.BaseJdbcLogger:159  DEBUG - ==> Parameters: example8@tekcity.com.cn(String)
+2019-07-25 19:59:26.780 [http-nio-8080-exec-5] o.a.i.l.jdbc.BaseJdbcLogger:159  DEBUG - <==      Total: 0
+2019-07-25 19:59:54.415 [http-nio-8080-exec-6] o.a.i.l.jdbc.BaseJdbcLogger:159  DEBUG - ==>  Preparing: SELECT * FROM calvin_user WHERE email=? 
+2019-07-25 19:59:54.415 [http-nio-8080-exec-6] o.a.i.l.jdbc.BaseJdbcLogger:159  DEBUG - ==> Parameters: example8@etekcity.com.cn(String)
+2019-07-25 19:59:54.416 [http-nio-8080-exec-6] o.a.i.l.jdbc.BaseJdbcLogger:159  DEBUG - <==      Total: 1

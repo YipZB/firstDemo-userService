@@ -1,0 +1,45 @@
+2019-07-29 10:02:57.129 [main] o.s.boot.StartupInfoLogger:50   INFO  - Starting Application on XZ-133BKH459LTG with PID 4732 (E:\springbootProject\calvinye-usermanagement\target\classes started by Calvin Ye in E:\springbootProject\calvinye-usermanagement)
+2019-07-29 10:02:57.132 [main] o.s.boot.StartupInfoLogger:53   DEBUG - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-29 10:02:57.132 [main] o.s.boot.SpringApplication:646  INFO  - No active profile set, falling back to default profiles: default
+2019-07-29 10:02:58.522 [main] o.s.boot.StartupInfoLogger:59   INFO  - Started Application in 1.566 seconds (JVM running for 2.148)
+2019-07-29 10:06:33.814 [main] o.s.boot.StartupInfoLogger:50   INFO  - Starting Application on XZ-133BKH459LTG with PID 4216 (E:\springbootProject\calvinye-usermanagement\target\classes started by Calvin Ye in E:\springbootProject\calvinye-usermanagement)
+2019-07-29 10:06:33.816 [main] o.s.boot.StartupInfoLogger:53   DEBUG - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-29 10:06:33.816 [main] o.s.boot.SpringApplication:646  INFO  - No active profile set, falling back to default profiles: default
+2019-07-29 10:06:35.174 [main] o.s.boot.StartupInfoLogger:59   INFO  - Started Application in 1.526 seconds (JVM running for 2.1)
+2019-07-29 10:08:57.572 [main] o.s.boot.StartupInfoLogger:50   INFO  - Starting Application on XZ-133BKH459LTG with PID 17028 (E:\springbootProject\calvinye-usermanagement\target\classes started by Calvin Ye in E:\springbootProject\calvinye-usermanagement)
+2019-07-29 10:08:57.574 [main] o.s.boot.StartupInfoLogger:53   DEBUG - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-29 10:08:57.574 [main] o.s.boot.SpringApplication:646  INFO  - No active profile set, falling back to default profiles: default
+2019-07-29 10:08:58.958 [main] o.s.boot.StartupInfoLogger:59   INFO  - Started Application in 1.562 seconds (JVM running for 2.12)
+2019-07-29 10:10:19.940 [main] o.s.boot.StartupInfoLogger:50   INFO  - Starting Application on XZ-133BKH459LTG with PID 4976 (E:\springbootProject\calvinye-usermanagement\target\classes started by Calvin Ye in E:\springbootProject\calvinye-usermanagement)
+2019-07-29 10:10:19.942 [main] o.s.boot.StartupInfoLogger:53   DEBUG - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-29 10:10:19.942 [main] o.s.boot.SpringApplication:646  INFO  - No active profile set, falling back to default profiles: default
+2019-07-29 10:10:21.456 [main] o.s.boot.StartupInfoLogger:59   INFO  - Started Application in 1.688 seconds (JVM running for 2.239)
+2019-07-29 10:16:59.821 [main] o.s.boot.StartupInfoLogger:50   INFO  - Starting Application on XZ-133BKH459LTG with PID 17540 (E:\springbootProject\calvinye-usermanagement\target\classes started by Calvin Ye in E:\springbootProject\calvinye-usermanagement)
+2019-07-29 10:16:59.822 [main] o.s.boot.StartupInfoLogger:53   DEBUG - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-29 10:16:59.823 [main] o.s.boot.SpringApplication:646  INFO  - No active profile set, falling back to default profiles: default
+2019-07-29 10:17:01.257 [main] o.s.boot.StartupInfoLogger:59   INFO  - Started Application in 1.609 seconds (JVM running for 2.16)
+2019-07-29 10:45:14.090 [main] o.s.boot.StartupInfoLogger:50   INFO  - Starting Application on XZ-133BKH459LTG with PID 14388 (E:\springbootProject\calvinye-usermanagement\target\classes started by Calvin Ye in E:\springbootProject\calvinye-usermanagement)
+2019-07-29 10:45:14.092 [main] o.s.boot.StartupInfoLogger:53   DEBUG - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-29 10:45:14.093 [main] o.s.boot.SpringApplication:646  INFO  - No active profile set, falling back to default profiles: default
+2019-07-29 10:45:15.503 [main] o.s.boot.StartupInfoLogger:59   INFO  - Started Application in 1.59 seconds (JVM running for 2.145)
+2019-07-29 10:49:23.770 [main] o.s.boot.StartupInfoLogger:50   INFO  - Starting Application on XZ-133BKH459LTG with PID 8604 (E:\springbootProject\calvinye-usermanagement\target\classes started by Calvin Ye in E:\springbootProject\calvinye-usermanagement)
+2019-07-29 10:49:23.772 [main] o.s.boot.StartupInfoLogger:53   DEBUG - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-29 10:49:23.772 [main] o.s.boot.SpringApplication:646  INFO  - No active profile set, falling back to default profiles: default
+2019-07-29 10:49:25.110 [main] o.s.boot.StartupInfoLogger:59   INFO  - Started Application in 1.512 seconds (JVM running for 2.075)
+2019-07-29 10:49:54.275 [http-nio-8080-exec-4] o.a.i.l.jdbc.BaseJdbcLogger:159  DEBUG - ==>  Preparing: SELECT * FROM calvin_user WHERE email=? 
+2019-07-29 10:49:54.289 [http-nio-8080-exec-4] o.a.i.l.jdbc.BaseJdbcLogger:159  DEBUG - ==> Parameters: example9@etekcity.com.cn(String)
+2019-07-29 10:49:54.303 [http-nio-8080-exec-4] o.a.i.l.jdbc.BaseJdbcLogger:159  DEBUG - <==      Total: 1
+2019-07-29 10:53:35.938 [main] o.s.boot.StartupInfoLogger:50   INFO  - Starting Application on XZ-133BKH459LTG with PID 12804 (E:\springbootProject\calvinye-usermanagement\target\classes started by Calvin Ye in E:\springbootProject\calvinye-usermanagement)
+2019-07-29 10:53:35.940 [main] o.s.boot.StartupInfoLogger:53   DEBUG - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-29 10:53:35.940 [main] o.s.boot.SpringApplication:646  INFO  - No active profile set, falling back to default profiles: default
+2019-07-29 10:53:37.447 [main] o.s.boot.StartupInfoLogger:59   INFO  - Started Application in 1.675 seconds (JVM running for 2.228)
+2019-07-29 10:53:44.532 [http-nio-8080-exec-1] o.a.i.l.jdbc.BaseJdbcLogger:159  DEBUG - ==>  Preparing: SELECT * FROM calvin_user WHERE email=? 
+2019-07-29 10:53:44.546 [http-nio-8080-exec-1] o.a.i.l.jdbc.BaseJdbcLogger:159  DEBUG - ==> Parameters: example9@etekcity.com.cn(String)
+2019-07-29 10:53:44.559 [http-nio-8080-exec-1] o.a.i.l.jdbc.BaseJdbcLogger:159  DEBUG - <==      Total: 1
+2019-07-29 10:57:33.116 [main] o.s.boot.StartupInfoLogger:50   INFO  - Starting Application on XZ-133BKH459LTG with PID 17596 (E:\springbootProject\calvinye-usermanagement\target\classes started by Calvin Ye in E:\springbootProject\calvinye-usermanagement)
+2019-07-29 10:57:33.118 [main] o.s.boot.StartupInfoLogger:53   DEBUG - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-29 10:57:33.118 [main] o.s.boot.SpringApplication:646  INFO  - No active profile set, falling back to default profiles: default
+2019-07-29 10:57:34.477 [main] o.s.boot.StartupInfoLogger:59   INFO  - Started Application in 1.532 seconds (JVM running for 2.088)
+2019-07-29 10:57:40.383 [http-nio-8080-exec-1] o.a.i.l.jdbc.BaseJdbcLogger:159  DEBUG - ==>  Preparing: SELECT * FROM calvin_user WHERE email=? 
+2019-07-29 10:57:40.397 [http-nio-8080-exec-1] o.a.i.l.jdbc.BaseJdbcLogger:159  DEBUG - ==> Parameters: example9@etekcity.com.cn(String)
+2019-07-29 10:57:40.411 [http-nio-8080-exec-1] o.a.i.l.jdbc.BaseJdbcLogger:159  DEBUG - <==      Total: 1
