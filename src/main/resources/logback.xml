@@ -56,12 +56,13 @@
     </appender>
 
     <!-- root 默认日志配置 ，只能为ERROR或者WARN！-->
-    <root level="error">
+    <root level="ERROR">
         <appender-ref ref="ERROR_FILE"/>
+        <appender-ref ref="console"/>
     </root>
 
     <!--业务模块的包的日志配置-->
-    <logger name="com.calvin.usermanagement" level="DEBUG">
+    <logger name="com.calvin.usermanagement" level="DEBUG" additivity="false">
         <appender-ref ref="logfile"/>
         <appender-ref ref="console"/>
     </logger>
