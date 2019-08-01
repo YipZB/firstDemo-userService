@@ -1,17 +1,19 @@
 package com.calvin.usermanagement.controller;
 
-import com.calvin.usermanagement.aop.interceptor.LoginedAuth;
+import com.calvin.usermanagement.controller.interceptor.LoginedAuth;
 import com.calvin.usermanagement.model.RegisterOrLoginRequest;
 import com.calvin.usermanagement.model.Response;
 import com.calvin.usermanagement.model.UpdatePwdRequest;
 import com.calvin.usermanagement.model.UpdateUserInfoRequest;
 import com.calvin.usermanagement.service.UserService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+@Slf4j
 @RestController
 // @RequestMapping("/api/v1/user")
 public class UserController {
@@ -28,15 +30,18 @@ public class UserController {
     @PostMapping(path = "/register", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE,
             produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public Response register(@Validated  @RequestBody RegisterOrLoginRequest request, BindingResult bindingResult) {
+        log.debug("in controller");
         return userService.register(request, bindingResult);
     }
 
     @PostMapping(path = "/login", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE,
             produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public Response login(@Validated @RequestBody RegisterOrLoginRequest request, BindingResult bindingResult) {
+        log.debug("in controller");
         return userService.login(request, bindingResult);
     }
 
+    @LoginedAuth
     @PostMapping(path = "/logout", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE,
             produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public Response logout(@RequestHeader("X-Authorization") String[] request) {

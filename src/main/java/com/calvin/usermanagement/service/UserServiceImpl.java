@@ -14,6 +14,7 @@ import com.calvin.usermanagement.repo.token.TokenManager;
 import com.calvin.usermanagement.repo.user.User;
 import com.calvin.usermanagement.repo.user.UserMapper;
 import com.calvin.usermanagement.util.Pbkdf2Sha256;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.BindingResult;
@@ -22,6 +23,7 @@ import org.springframework.validation.FieldError;
 // 名称？
 
 @Service
+@Slf4j
 public class UserServiceImpl implements UserService {
 
     @Resource
@@ -94,19 +96,19 @@ public class UserServiceImpl implements UserService {
     @Override
     public Response logout(String[] request) {
         // 异常处理？？字段缺失或空
-        if (request == null) {
-            JSONObject result = new JSONObject();
-            result.put("X-Authorization", "X-Authorization can not be null");
-            return Response.failure(ResponseCodes.USER_PARAM_IS_INVALID, result);
-        }
+//        if (request == null) {
+//            JSONObject result = new JSONObject();
+//            result.put("X-Authorization", "X-Authorization can not be null");
+//            return Response.failure(ResponseCodes.USER_PARAM_IS_INVALID, result);
+//        }
         Token logoutToken = new Token(request[0], request[1]);
-        ResponseCodes checkTokenCode = tokenManager.checkToken(logoutToken);
-        if (checkTokenCode.equals(ResponseCodes.SUCCESS)) {
+//        ResponseCodes checkTokenCode = tokenManager.checkToken(logoutToken);
+//        if (checkTokenCode.equals(ResponseCodes.SUCCESS)) {
             tokenManager.deleteToken(logoutToken);
             return Response.success();
-        } else {
-            return Response.failure(checkTokenCode);
-        }
+//        } else {
+//            return Response.failure(checkTokenCode);
+//        }
     }
 
     @Override

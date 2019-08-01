@@ -11,12 +11,15 @@ public enum ResponseCodes {
     USER_OLD_PWD_FORMAT_ERROR(-20105,"old password格式不合法"),
     USER_NEW_PWD_FORMAT_ERROR(-20106,"new password格式不合法"),
     MYSQL_STORAGE_ERROR(-20107, "MySQL存储错误"),
-    USER_EXIST_ERROR(-20111, "邮箱已注册"),
+
     USER_PWD_INCORRECT_ERROR(-20112, "密码不正确"),
     USER_NOT_EXIST_ERROR(-20113, "邮箱不存在"),
 
     TOKEN_EXPIRED_ERROR(-20201,"token无效（不存在，过期或登出）"),
-    TOKEN_NOT_MATCH_ERROR(-20202,"token不属于该用户");
+    TOKEN_NOT_MATCH_ERROR(-20202,"token不属于该用户"),
+    TOKEN_INFO_NOT_FOUND_ERROR(-20203,"token信息未获取"),
+
+    USER_EXIST_ERROR(-20301, "邮箱已注册");
 
     private int code;
     private String msg;
