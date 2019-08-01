@@ -1,5 +1,6 @@
 package com.calvin.usermanagement.controller;
 
+import com.calvin.usermanagement.aop.interceptor.LoginedAuth;
 import com.calvin.usermanagement.model.RegisterOrLoginRequest;
 import com.calvin.usermanagement.model.Response;
 import com.calvin.usermanagement.model.UpdatePwdRequest;
@@ -17,9 +18,11 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    @LoginedAuth
     @RequestMapping("/")
-    public String index() {
-        return "start";
+    public String index(String request) {
+        System.out.println(request);
+        return request;
     }
 
     @PostMapping(path = "/register", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE,
