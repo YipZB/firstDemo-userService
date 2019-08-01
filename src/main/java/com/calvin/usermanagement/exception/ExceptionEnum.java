@@ -1,6 +1,6 @@
 package com.calvin.usermanagement.exception;
 
-import com.calvin.usermanagement.model.ResponseCodes;
+import com.calvin.usermanagement.model.response.ResponseCodes;
 
 /**
  * @author Calvin Ye

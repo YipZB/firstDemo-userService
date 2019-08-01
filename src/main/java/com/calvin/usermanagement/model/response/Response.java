@@ -1,13 +1,19 @@
-package com.calvin.usermanagement.model;
+package com.calvin.usermanagement.model.response;
 
 import javax.validation.constraints.NotNull;
 
 import com.alibaba.fastjson.JSONObject;
+import lombok.Data;
 
+
+@Data
 public class Response {
+
     @NotNull(message = "reponse code should not be null")
     private int code;
+
     private String msg;
+
     private JSONObject result;
 
     public Response() {
@@ -24,9 +30,6 @@ public class Response {
         this.msg = responseCodes.msg();
     }
 
-    public void setResult(JSONObject result) {
-        this.result = result;
-    }
 
     public static Response success() {
         Response response = new Response();
@@ -52,22 +55,5 @@ public class Response {
         response.setCodeAndMsg(responseCodes);
         response.setResult(result);
         return response;
-    }
-
-    public int getCode() {
-        return code;
-    }
-
-    public String getMsg() {
-        return msg;
-    }
-
-    public JSONObject getResult() {
-        return result;
-    }
-
-    @Override
-    public String toString() {
-        return "code:" + code + "\nmsg:" + msg + "\nresult:" + result.toJSONString();
     }
 }

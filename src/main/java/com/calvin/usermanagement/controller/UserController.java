@@ -1,10 +1,9 @@
 package com.calvin.usermanagement.controller;
 
-import com.calvin.usermanagement.controller.interceptor.LoginedAuth;
-import com.calvin.usermanagement.model.RegisterOrLoginRequest;
-import com.calvin.usermanagement.model.Response;
-import com.calvin.usermanagement.model.UpdatePwdRequest;
-import com.calvin.usermanagement.model.UpdateUserInfoRequest;
+import com.calvin.usermanagement.model.request.RegisterOrLoginRequest;
+import com.calvin.usermanagement.model.response.Response;
+import com.calvin.usermanagement.model.request.UpdatePwdRequest;
+import com.calvin.usermanagement.model.request.UpdateUserInfoRequest;
 import com.calvin.usermanagement.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,28 +19,23 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @LoginedAuth
     @RequestMapping("/")
     public String index(String request) {
-        System.out.println(request);
-        return request;
+        return "start";
     }
 
     @PostMapping(path = "/register", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE,
             produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-    public Response register(@Validated  @RequestBody RegisterOrLoginRequest request, BindingResult bindingResult) {
-        log.debug("in controller");
-        return userService.register(request, bindingResult);
+    public Response register(@Validated @RequestBody RegisterOrLoginRequest request) {
+        return userService.register(request);
     }
 
     @PostMapping(path = "/login", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE,
             produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-    public Response login(@Validated @RequestBody RegisterOrLoginRequest request, BindingResult bindingResult) {
-        log.debug("in controller");
-        return userService.login(request, bindingResult);
+    public Response login(@Validated @RequestBody RegisterOrLoginRequest request) {
+        return userService.login(request);
     }
 
-    @LoginedAuth
     @PostMapping(path = "/logout", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE,
             produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public Response logout(@RequestHeader("X-Authorization") String[] request) {
@@ -57,15 +51,15 @@ public class UserController {
     @PostMapping(path = "/updateUserInfo", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE,
             produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public Response updateUserInfo(@RequestHeader("X-Authorization") String[] requestHeader,
-            @Validated @RequestBody UpdateUserInfoRequest requestBody, BindingResult bindingResult) {
-        return userService.updateUserInfo(requestHeader, requestBody, bindingResult);
+                                   @Validated @RequestBody UpdateUserInfoRequest requestBody) {
+        return userService.updateUserInfo(requestHeader, requestBody);
     }
 
     @PostMapping(path = "/updatePwd", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE,
             produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public Response updatePwd(@RequestHeader("X-Authorization") String[] requestHeader,
-            @Validated @RequestBody UpdatePwdRequest requestBody, BindingResult bindingResult) {
-        return userService.updatePwd(requestHeader, requestBody, bindingResult);
+                              @Validated @RequestBody UpdatePwdRequest requestBody) {
+        return userService.updatePwd(requestHeader, requestBody);
     }
 
 }

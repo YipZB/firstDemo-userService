@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-import com.calvin.usermanagement.model.ResponseCodes;
+import com.calvin.usermanagement.model.response.ResponseCodes;
 import com.calvin.usermanagement.util.TokenUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;

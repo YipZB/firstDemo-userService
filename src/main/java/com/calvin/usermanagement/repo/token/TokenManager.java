@@ -1,8 +1,6 @@
 package com.calvin.usermanagement.repo.token;
 
-import java.util.List;
-
-import com.calvin.usermanagement.model.ResponseCodes;
+import com.calvin.usermanagement.model.response.ResponseCodes;
 
 /**
  * @author Calvin Ye

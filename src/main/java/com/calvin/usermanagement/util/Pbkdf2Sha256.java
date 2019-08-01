@@ -27,13 +27,10 @@ public class Pbkdf2Sha256 {
 
     /**
      * 获取密文
-     * 
-     * @param password
-     *            密码明文
-     * @param salt
-     *            加盐
-     * @param iterations
-     *            迭代计数
+     *
+     * @param password   密码明文
+     * @param salt       加盐
+     * @param iterations 迭代计数
      * @return
      */
     private static String getEncodedHash(String password, String salt, int iterations) {
@@ -60,7 +57,7 @@ public class Pbkdf2Sha256 {
 
     /**
      * 密文加盐
-     * 
+     *
      * @return String
      */
     private static String getsalt() {
@@ -70,11 +67,11 @@ public class Pbkdf2Sha256 {
         for (int i = 0; i < length; i++) {
             int t = rand.nextInt(3);
             if (t == 0) {
-                rs[i] = (char)(rand.nextInt(10) + 48);
+                rs[i] = (char) (rand.nextInt(10) + 48);
             } else if (t == 1) {
-                rs[i] = (char)(rand.nextInt(26) + 65);
+                rs[i] = (char) (rand.nextInt(26) + 65);
             } else {
-                rs[i] = (char)(rand.nextInt(26) + 97);
+                rs[i] = (char) (rand.nextInt(26) + 97);
             }
         }
         return new String(rs);
@@ -82,7 +79,7 @@ public class Pbkdf2Sha256 {
 
     /**
      * rand salt iterations is default 20000
-     * 
+     *
      * @param password
      * @return
      */
@@ -92,8 +89,8 @@ public class Pbkdf2Sha256 {
 
     /**
      * rand salt
-     * 
-     * @param password
+     *
+     * @param password 明文
      * @return
      */
     public static String encode(String password, int iterations) {
@@ -102,7 +99,7 @@ public class Pbkdf2Sha256 {
 
     /**
      * iterations is default 20000
-     * 
+     *
      * @param password
      * @param salt
      * @return
@@ -112,13 +109,9 @@ public class Pbkdf2Sha256 {
     }
 
     /**
-     *
-     * @param password
-     *            密码明文
-     * @param salt
-     *            加盐
-     * @param iterations
-     *            迭代计数
+     * @param password   密码明文
+     * @param salt       加盐
+     * @param iterations 迭代计数
      * @return
      */
     public static String encode(String password, String salt, int iterations) {
@@ -129,11 +122,9 @@ public class Pbkdf2Sha256 {
 
     /**
      * 校验密码是否合法
-     * 
-     * @param password
-     *            明文
-     * @param hashedPassword
-     *            密文
+     *
+     * @param password       明文
+     * @param hashedPassword 密文
      * @return
      */
     public static boolean verification(String password, String hashedPassword) {
