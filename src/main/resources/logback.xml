@@ -5,7 +5,7 @@
     <!--设置日志的目录-->
     <property name="log.dir" value="./data/logs/${module.name}"/>
     <!-- 输出格式 -->
-    <property name="out.pattern" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %class{32}:%-4line %-5level - %m%n"/>
+    <property name="out.pattern" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %28.40class{32}:%-4line %8level - %m%n"/>
     <!-- 活动文件的大小 -->
     <property name="max.file.size" value="200MB"/>
     <!-- 保留的归档文件的天数 -->
