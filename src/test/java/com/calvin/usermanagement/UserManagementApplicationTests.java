@@ -1,10 +1,12 @@
 package com.calvin.usermanagement;
 
-import java.util.Random;
+import java.util.*;
 import javax.annotation.Resource;
 
+import com.calvin.usermanagement.repo.user.User;
 import com.calvin.usermanagement.repo.user.UserMapper;
 import com.calvin.usermanagement.service.UserServiceImpl;
+import lombok.Data;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,18 +26,13 @@ public class UserManagementApplicationTests {
 
     @Test
     public void contextLoads() {
-        long l = 24 * 3600 + new Random().nextInt(1000);
-//        long l1 = 24 * 3600 + new Random().nextInt(1000);
-//        long l2 = 24 * 3600 + new Random().nextInt(1000);
-//        long l3 = 24 * 3600 + new Random().nextInt(1000);
-//        long l4 = 24 * 3600 + new Random().nextInt(1000);
-//        long l5 = 24 * 3600 + new Random().nextInt(1000);
-        System.out.println(l);
-//        System.out.println(l1);
-//        System.out.println(l2);
-//        System.out.println(l3);
-//        System.out.println(l4);
-//        System.out.println(l5);
-    }
+//        Map<String, User> map = new HashMap<>();
+//        map.put("aaa", null);
+//        System.out.println(map.getOrDefault("aaa", new User()));
 
+//            eventMsgMap.computeIfAbsent(deviceId, k -> new HashMap<>(10))
+//                        .computeIfAbsent(alarmType, k -> new ArrayList<>())
+//                        .add(eventMsg);
+
+    }
 }

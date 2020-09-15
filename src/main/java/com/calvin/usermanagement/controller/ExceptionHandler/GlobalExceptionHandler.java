@@ -7,7 +7,9 @@ import com.calvin.usermanagement.exception.BizException;
 import com.calvin.usermanagement.exception.ExceptionEnum;
 import com.calvin.usermanagement.model.response.Response;
 import com.calvin.usermanagement.model.response.ResponseCodes;
+import lombok.extern.slf4j.Slf4j;
 import netscape.javascript.JSObject;
+import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -20,6 +22,7 @@ import java.lang.reflect.Field;
  * @author Calvin Ye
  * @since 2019年08月01日 15:27
  */
+@Slf4j
 @ControllerAdvice
 @RestController
 public class GlobalExceptionHandler {
@@ -39,5 +42,15 @@ public class GlobalExceptionHandler {
             paramInvalidItems.put(fieldError.getField(), fieldError.getDefaultMessage());
         }
         return Response.failure(ResponseCodes.USER_PARAM_IS_INVALID, paramInvalidItems);
+    }
+
+    @ExceptionHandler(Exception.class)
+    public void handleException(Exception e, HttpServletRequest request) {
+        log.info("e=======");
+    }
+
+    @ExceptionHandler(HttpMessageNotReadableException.class)
+    public void handleHttpMessageNotReadableException(Exception e, HttpServletRequest request) {
+        log.info("http=======");
     }
 }
